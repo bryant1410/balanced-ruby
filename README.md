@@ -70,23 +70,23 @@ All issues should be documented at
 
 ### Scenarios
 
-####Render
+#### Render
 
 To render executable files from scenario templates run `rake render_executables`
 Check /scenarios and make sure each scenario has an executable.rb file
 
-####Delete
+#### Delete
 
 To delete previously generated executable files run `rake delete_executables`
 
-####Test
+#### Test
 
 After generating executable files, make sure they are valid Ruby files by running
  `rspec scenarios/execute.rb` from the root directory
 
 ### Troubleshooting
 
-#####OpenSSL
+##### OpenSSL
     SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (OpenSSL::SSL::SSLError)
 
 The machine's Ruby/OpenSSL environment can't find any root certificates to trust. Please refer [here](http://www.google.com/search?q=SSL+connect+returned=1+errno=0+state=SSLv3) to find the best solution for your environment.
